@@ -1,0 +1,249 @@
+
+html
+{
+	height: 100%;	
+}
+
+body
+{
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+/* Overwriting navbar pour enlever l'espace en dessous de la navbar */
+.navbar
+{
+	margin-bottom: 0 !important;
+	background: url("../img/toolbar.png") 0 0 repeat-x;"
+} 
+#main-content
+{
+	min-height: 100%;
+	padding-top: 20px;
+}
+
+/* THEME */
+.navbar a
+{
+	color: #fff !important;
+}
+
+/* Sable */
+/*
+.navbar
+{
+background: rgba(255,252,222,1);
+background: -moz-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,188,94,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,252,222,1)), color-stop(100%, rgba(255,188,94,1)));
+background: -webkit-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,188,94,1) 100%);
+background: -o-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,188,94,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,188,94,1) 100%);
+background: linear-gradient(to bottom, rgba(255,252,222,1) 0%, rgba(255,188,94,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcde', endColorstr='#ffbc5e', GradientType=0 );
+}
+*/
+/* Saumon */
+/*
+.navbar
+{
+background: rgba(239,197,202,1);
+background: -moz-linear-gradient(top, rgba(239,197,202,1) 0%, rgba(186,39,55,1) 0%, rgba(241,142,153,1) 2%, rgba(210,75,90,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(239,197,202,1)), color-stop(0%, rgba(186,39,55,1)), color-stop(2%, rgba(241,142,153,1)), color-stop(100%, rgba(210,75,90,1)));
+background: -webkit-linear-gradient(top, rgba(239,197,202,1) 0%, rgba(186,39,55,1) 0%, rgba(241,142,153,1) 2%, rgba(210,75,90,1) 100%);
+background: -o-linear-gradient(top, rgba(239,197,202,1) 0%, rgba(186,39,55,1) 0%, rgba(241,142,153,1) 2%, rgba(210,75,90,1) 100%);
+background: -ms-linear-gradient(top, rgba(239,197,202,1) 0%, rgba(186,39,55,1) 0%, rgba(241,142,153,1) 2%, rgba(210,75,90,1) 100%);
+background: linear-gradient(to bottom, rgba(239,197,202,1) 0%, rgba(186,39,55,1) 0%, rgba(241,142,153,1) 2%, rgba(210,75,90,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#d24b5a', GradientType=0 );	
+}
+*/
+
+/* Blue */
+/*
+.navbar
+{
+background: rgba(212,228,239,1);
+background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
+}
+*/
+
+/* Blue */	
+/*
+#ctl-app
+{
+background: rgba(226,237,245,1);
+background: -moz-linear-gradient(top, rgba(226,237,245,1) 0%, rgba(242,247,250,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,237,245,1)), color-stop(100%, rgba(242,247,250,1)));
+background: -webkit-linear-gradient(top, rgba(226,237,245,1) 0%, rgba(242,247,250,1) 100%);
+background: -o-linear-gradient(top, rgba(226,237,245,1) 0%, rgba(242,247,250,1) 100%);
+background: -ms-linear-gradient(top, rgba(226,237,245,1) 0%, rgba(242,247,250,1) 100%);
+background: linear-gradient(to bottom, rgba(226,237,245,1) 0%, rgba(242,247,250,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2edf5', endColorstr='#f2f7fa', GradientType=0 );
+}
+*/
+
+
+#ctl-app
+{
+	/* beige background: rgba(242,238,227,1);*/
+	/* bleu background: rgba(166,206,255,1); */
+	/* background: rgba(171,174,210,1); */
+	background: rgba(122, 41, 47, 0.2);
+}
+
+/* Saumon */
+/*
+#ctl-app
+{
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,203,203,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(250,203,203,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,203,203,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,203,203,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,203,203,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,203,203,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#facbcb', GradientType=0 );
+
+}
+*/
+
+/* Sable */
+/*
+#ctl-app
+{
+background: rgba(255,252,222,1);
+background: -moz-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,227,186,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,252,222,1)), color-stop(100%, rgba(255,227,186,1)));
+background: -webkit-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,227,186,1) 100%);
+background: -o-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,227,186,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,252,222,1) 0%, rgba(255,227,186,1) 100%);
+background: linear-gradient(to bottom, rgba(255,252,222,1) 0%, rgba(255,227,186,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcde', endColorstr='#ffe3ba', GradientType=0 );
+}
+*/
+/* Sobre */
+/*
+#ctl-app
+{
+background: rgba(226,226,226,1);
+background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 5%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(219,219,219,1)), color-stop(5%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 5%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 5%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 5%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 5%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+}
+*/
+
+#footer
+{
+	position: absolute;
+	bottom: 0;
+	left: 50px;
+}
+
+#header-content h1
+{
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ddd;
+}
+
+.input-group-addon
+{
+	/*background-color: #C0D2FF !important;*/
+	min-width: 160;
+}
+
+.navbar-nav > li:hover .sous_menu_navbar {
+	top: 100%;
+}
+
+.sous_menu_navbar{
+	position: absolute;
+	margin: 0; padding: 0;
+	background-color: #333;
+	
+	white-space:nowrap;
+	position:absolute;
+	top:-9999px;
+	list-style:none;
+
+}
+
+.sous_menu_navbar li{
+	padding: 10px;
+}
+.sous_menu_navbar li:hover{
+	background-color: #000;
+
+}
+.sous_menu_navbar a:hover{
+	color: #fff;
+	text-decoration: none;	
+}
+.sous_menu_navbar a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#accueil-box {
+	text-align: center;
+}
+
+#accueil-box h3
+{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+}
+
+#accueil-box h2
+{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+}
+
+#accueil-img-container
+{
+	height: 100%;
+	background-size: cover;
+	background-image: url("../img/bruel_1.jpg");
+}
+
+#accueil-module-container div:hover
+{
+	/* background-color: #fbff94; */
+	cursor: hand;
+}
+
+
+#datatable tbody tr:hover
+{
+	background-color: #fbff94;
+}
+
+#popup_photo:hover
+{
+	display: block;
+	pointer: hand
+}
+
