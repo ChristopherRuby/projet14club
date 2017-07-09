@@ -4,7 +4,7 @@ $(document).ready(function() {
     // Have to be added to have the proper rendered
     $('#datatable').removeClass( 'display' ).addClass('table table-striped table-bordered');
         
-    $(".triggerModalDeleteAction").on('click',function(){
+    $(document).on('click',".triggerModalDeleteAction",function(){
     	$('#myModal').modal('show');
     	var current_line=$(this).parent().parent();
     	launch_modal_delete(current_line);
