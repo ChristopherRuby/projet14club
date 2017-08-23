@@ -11,20 +11,8 @@
 			<table class="table table-hover">
 				<tbody>
 					<tr>
-						<td style="font-weight:bold;">Nombre total d'abonnés</td>
-						<td><?php print $abonne_total['count']; ?></td>
-					</tr>
-					<tr>
 						<td style="font-weight:bold;color:red;">Nombre total d'abonnés en cours</td>
 						<td style="font-weight:bold;color:red;"><?php print $abonne_en_cours['count']; ?></td>
-					</tr>
-					<tr>
-						<td>Nombre total d'abonnés clôturés</td>
-						<td><?php print $abonne_clo['count']; ?></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
 					</tr>
 					<tr>
 						<td>Nombre total d'abonnés en cours traditionnels</td>
@@ -65,7 +53,19 @@
 					<tr>
 						<td>Nombre total de réabonnements internet</td>
 						<td><?php print $abonne_reabo_internet['count']; ?></td>
-					</tr>																																																				
+					</tr>	
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>					
+					<tr>
+						<td>Nombre total d'abonnés clôturés</td>
+						<td><?php print $abonne_clo['count']; ?></td>
+					</tr>					
+					<tr>
+						<td style="font-weight:bold;">Nombre total d'abonnés</td>
+						<td><?php print $abonne_total['count']; ?></td>
+					</tr>																																																								
 				</tbody>
 			</table>			
 			

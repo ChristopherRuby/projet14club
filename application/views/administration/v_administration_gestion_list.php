@@ -71,9 +71,10 @@ $(document).ready(function() {
 	$('.delete_action').on('click',function(){
 		
 		id_user=$(this).parents('tr').find('.checkboxId').val();
+		num_user=$(this).parents('tr').find("td[tag=num_user]").text();
 		//alert(id_user);
 		$('#delModal').modal('show');
-		$("#modalTargetValue").text(id_user);
+		$("#modalTargetValue").text(num_user);
 		$("#userValue").val(id_user);
 		
 	});
@@ -109,7 +110,7 @@ $(document).ready(function() {
 						{
 						?>
 						<tr>
-							<td><?php echo $line['num_user']; ?></td>											
+							<td tag="num_user"><?php echo $line['num_user']; ?></td>											
 							<td><?php echo $line['nom']; ?></td>
 							<td><?php echo $line['prenom']; ?></td>
 							<td><?php echo $line['date_naissance']; ?></td>

@@ -14,7 +14,7 @@ $content = "
 			</tr>
 			<tr></tr>
 			<tr>
-				<td>DATE : ".$date."</td>
+				<td>DATE : ".$date_today."</td>
 			</tr>
 		</table>
 		<br />

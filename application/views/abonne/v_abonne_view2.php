@@ -71,7 +71,28 @@ $(document).ready(function() {
 
 	$('#popupDelete').on('click',function(){
 		$('#deleteModal').modal('show');
-	});		
+	});
+	
+	// Incremente la date de fin a A+1 par rapport à la date début
+	$("input[tag='date_debut']").on('change',function(){
+		// get la date de debut
+		val=$(this).val();
+		//Split dans un tableau
+		tab_val=val.split('-');
+		// Assignation 
+		annee=parseInt(tab_val[0]);
+		mois=tab_val[1];
+		jours=tab_val[2];
+		annee_incr=annee+1;
+		newDate=annee_incr+'-'+mois+'-'+jours;
+		//alert(newDate);
+		
+		// Set de la nouvelle dat
+		// Voyage jusqu'à l'objet form, puis va chercher l'input avec le tag
+		$(this).parent().parent().parent().find("input[tag='date_fin']").val(newDate)
+
+		//$('#date_fin').val(newDate);
+	});	
 	
     function ctrl_form($arg)
     {
@@ -142,7 +163,7 @@ $(document).ready(function() {
 							<span id="lock_form_button" class="btn btn-default" style="display: none;cursor: hand;">
 								<span id="lock_form_button" class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Vérrouiller la fiche
 							</span>			
-							<input disabled="disabled" class="btn btn-success" type="submit" id="input_submit" value="Modifier l'adhérent" style="visibility: hidden;" />	
+							<input disabled="disabled" class="btn btn-success" type="submit" id="input_submit" value="Valider l'adhérent" style="visibility: hidden;" />	
 							<div style="margin-bottom: 10px"></div>					
 							<button type="button" id="popupDelete" class="btn btn-danger">Supprimer l'abonné</button>
 		    				<div style="margin-bottom: 10px"></div>
@@ -358,13 +379,13 @@ $(document).ready(function() {
 			  <div class="form-group">
 			    <label for="date_debut" class="col-sm-2 control-label">Date début</label>
 			    <div class="col-sm-10">
-			      <input type="date" value="<?php echo date("Y-m-t"); ?>" class="form-control" id="date_debut" name="date_debut" required="required">
+			      <input type="date" value="<?php echo date("Y-m-t"); ?>" class="form-control" tag="date_debut" name="date_debut" required="required">
 			    </div>
 			  </div>
 			  <div class="form-group">
 			    <label for="date_fin" class="col-sm-2 control-label">Date fin</label>
 			    <div class="col-sm-10">
-			      <input type="date" value="<?php echo date("Y-m-d", mktime(0,0,0, date("m"), date("t"), date("Y")+1)); ?>" class="form-control" id="date_fin" name="date_fin" required="required">
+			      <input type="date" value="<?php echo date("Y-m-d", mktime(0,0,0, date("m"), date("t"), date("Y")+1)); ?>" class="form-control" tag="date_fin" name="date_fin" required="required">
 			    </div>
 			  </div>
 			  <div class="form-group">
@@ -564,26 +585,26 @@ $(document).ready(function() {
 			  <div class="form-group">
 			    <label for="date_debut" class="col-sm-2 control-label">Date début</label>
 			    <div class="col-sm-10">
-			      <input type="date" class="form-control" id="date_debut" name="date_debut" value="<?php echo $abo['date_debut_for_input']; ?>" required>
+			      <input type="date" class="form-control" tag="date_debut" name="date_debut" value="<?php echo $abo['date_debut_for_input']; ?>" required>
 			    </div>
 			  </div>
 			  <div class="form-group">
 			    <label for="date_fin" class="col-sm-2 control-label">Date fin</label>
 			    <div class="col-sm-10">
-			      <input type="date" class="form-control" id="date_fin" name="date_fin" value="<?php echo $abo['date_fin_for_input']; ?>" required>
+			      <input type="date" class="form-control" tag="date_fin" name="date_fin" value="<?php echo $abo['date_fin_for_input']; ?>" required>
 			    </div>
 			  </div>
 			  <div class="form-group">
 			    <label for="nb_journaux" class="col-sm-2 control-label">Nombre de journaux</label>
 			    <div class="col-sm-10">
-			      <input type="number" class="form-control" id="nb_journaux" name="nb_journaux" value="<?php echo $abo['nb_journaux']; ?>" required>
+			      <input type="number" class="form-control" tag="nb_journaux" name="nb_journaux" value="<?php echo $abo['nb_journaux']; ?>" required>
 			    </div>
 			  </div>
 			  <div class="form-group">
 			    <label for="prix" class="col-sm-2 control-label">Montant</label>
 			    <div class="col-sm-10">
 				    <div class="input-group">
-				      <input type="number" class="form-control" id="prix" name="prix" value="<?php echo $abo['prix']; ?>" required>
+				      <input type="number" class="form-control" tag="prix" name="prix" value="<?php echo $abo['prix']; ?>" required>
 				      <div class="input-group-addon">€</div>
 				    </div>
 			    </div>
@@ -592,7 +613,7 @@ $(document).ready(function() {
 			    <label for="mode_paiement" class="col-sm-2 control-label">Payé</label>
 			    <div class="col-sm-10">
 				    <div class="input-group">
-						<select class="form-control" id="payer" name="payer">
+						<select class="form-control" tag="payer" name="payer">
 						  <option <?php if($abo['payer']=='f'){echo "selected='selected'";} ?> value="false">Non</option>
 						  <option <?php if($abo['payer']=='t'){echo "selected='selected'";} ?> value="true">Oui</option>
 						</select>					      

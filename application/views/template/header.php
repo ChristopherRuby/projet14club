@@ -100,7 +100,7 @@
 					// echo "active";
 				} 
 						?>">
-				<a href="<?php echo $base_url ?>impression/etiquettes_by_form">Etiquette</a>			
+				<a href="<?php echo $base_url ?>impression/etiquettes_by_form">Etiquettes</a>			
 			</li>
 			<!-- 						
 			<li class="<?php 

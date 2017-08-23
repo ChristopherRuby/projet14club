@@ -294,7 +294,7 @@ SELECT *
 			// attention variable clause2
 			if(isset($data_filtered['dep']) && $data_filtered['dep']!="")
 			{
-				$clause2.=" and \"DEP\" = '".$data_filtered['dep']."' ";
+				$clause2.=" and \"DEP\"='".$data_filtered['dep']."' ";
 			}			
 			if(isset($data_filtered['ville']) && $data_filtered['ville']!="")
 			{
@@ -311,7 +311,7 @@ SELECT *
 			if(isset($data_filtered['status_abo']) && $data_filtered['status_abo']!="")
 			{
 				// attention varaiable $clause2
-				$clause2=" and t1.\"USER_STATUS\"=".$this->db->escape($data_filtered['status_abo'])." ";
+				$clause2.=" and t1.\"USER_STATUS\"=".$this->db->escape($data_filtered['status_abo'])." ";
 			}
 			if(isset($data_filtered['sexe']) && $data_filtered['sexe']!="")
 			{
@@ -411,6 +411,8 @@ SELECT *
 			 					where 1=1 
 			 					$clause2
   								");
+			
+			log_message('error',$clause2);
 			
 			if($query->num_rows()>0)
 			{
