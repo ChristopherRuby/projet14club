@@ -16,7 +16,7 @@
     $config['smtp_host'] = 'ssl://secure.emailsrvr.com'; //change this
     $config['smtp_port'] = '465';
     $config['smtp_user'] = '14leclub@patrickbruel.com'; //change this
-    $config['smtp_pass'] = "regular45watH";
+    $config['smtp_pass'] = "Louh@ns1717";
     $config['mailtype'] = 'html';
     $config['charset'] = 'utf-8';
     $config['wordwrap'] = TRUE;

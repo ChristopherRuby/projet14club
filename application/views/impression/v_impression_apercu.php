@@ -125,6 +125,31 @@ if(isset($list_bordereau))
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="genModalLabel">Générer le bordereau de banque et l'archiver</h4>
+      </div>
+      <div class="modal-body">
+      	<div>
+	      	<form action="<?php echo $base_url ?>impression/validate_bordereau" method="post" class="form-horizontal">
+	      		Valider la génération du bordereau et l'archiver.
+			  <input value="<?php echo $mode_paiement; ?>" type="hidden" name="mode_paiement" id="mode_paiement" />		
+			  <input value="<?php echo $name_bordereau; ?>" type="hidden" name="name_bordereau" id="name_bordereau" />  
+			  <br><br>
+			  <input class="btn btn-success" type="submit" value="Générer le bordereau banque" />
+			</form>     		
+      	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<div class="modal fade" id="genModal" tabindex="-1" role="dialog" aria-labelledby="genModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="genModalLabel">Générer le bordereau de banque</h4>
       </div>
       <div class="modal-body">
@@ -147,7 +172,7 @@ if(isset($list_bordereau))
     </div>
   </div>
 </div>
-
+-->
 <?php
 /*
 $nb_cheque="";

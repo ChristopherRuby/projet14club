@@ -223,8 +223,9 @@ class Impression extends MY_Controller {
 		
 		$data=$this->data;
 		$data['name_bordereau']="bordereau_".date('Ymd').'_'.uniqid();
+		$data['date_today']=date("m/d/Y");
 		
-		$nb_journaux=$this->input->post('nb_journaux');
+		# $nb_journaux=$this->input->post('nb_journaux');
 		$mode_paiement=$this->input->post('mode_paiement');		
 		$data['name_bordereau']=$this->input->post('name_bordereau');	
 		$data['list_bordereau']=$this->impression_model->get_abonnements_bordereau_not_gen($mode_paiement);
@@ -240,11 +241,10 @@ class Impression extends MY_Controller {
 				<table style='width:100%'>
 					<tr>
 						<td style='width:80%'>CLIENTS : 14 le Club</td>
-						<td style='width:20%;text-align: right;'>04250048701</td>
 					</tr>
 					<tr></tr>
 					<tr>
-						<td>DATE : 16/07/2015</td>
+						<td>DATE : ".$data['date_today']."</td>
 					</tr>
 				</table>
 				<br />
@@ -261,7 +261,7 @@ class Impression extends MY_Controller {
 					<tbody>
 						";
 						
-		if(isset($list_bordereau))
+		if(isset($data['list_bordereau']))
 		{
 		
 			// On itère sure tous les abonnements pour créer les lignes
@@ -301,7 +301,7 @@ class Impression extends MY_Controller {
     //$html2pdf_visu->Output(''.$name_bordereau.'.pdf');
 		
 		$this->impression_model->insert_bordereau_informations($data['list_bordereau'],$data['name_bordereau']);
-		$this->impression_model->update_abonnement_by_gen_bordereau($data['list_bordereau'],$nb_journaux);			
+		# $this->impression_model->update_abonnement_by_gen_bordereau($data['list_bordereau'],$nb_journaux);			
 		
 		redirect("/impression/index");
 		

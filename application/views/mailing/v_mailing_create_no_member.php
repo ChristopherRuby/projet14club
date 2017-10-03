@@ -20,7 +20,7 @@
 		{
 	?>
 		<div class="alert alert-success" role="alert">
-			L'envoie de mail s'est bien déroulé.
+			L'envoi de mail s'est bien déroulé.
 		</div>		
 	<?php		
 		}
@@ -28,7 +28,7 @@
 		{
 	?>
 		<div class="alert alert-danger" role="alert">
-			L'envoie de mail s'est mal bien déroulé.
+			L'envoi de mail s'est mal bien déroulé.
 		</div>		
 	<?php				
 		};		

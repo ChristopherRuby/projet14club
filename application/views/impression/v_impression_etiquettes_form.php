@@ -107,7 +107,7 @@ $(document).ready(function() {
 			    <label for="formule">Statut de l'abonnement : </label>
 			    <!-- Day dropdown -->
 				<select name="status_abo" id="status_abo" class="form-control" style="width: 15%;display: inline;">
-					<option value="">- Status d'abonnement -</option>
+					<option value="">- Tous -</option>
 					<option <?php if(isset($prev_data)){ if($prev_data['status_abo']=='En cours'){echo "selected='selected'";};} ?>value="En cours">En cours</option>
 					<option <?php if(isset($prev_data)){ if($prev_data['status_abo']=='Clôturé'){echo "selected='selected'";};} ?>value="Clôturé">Clôturé</option>
 				</select>
