@@ -142,7 +142,8 @@ class Impression extends MY_Controller {
 			$this->load->view('template/footer', $data);
 			 * 
 			 */
-			 if(count($data['list_user'])>300)
+			 # if(count($data['list_user'])>300)
+			 if(0)
 			 {
 				$this->load->view('template/header', $data);
 				$this->load->view('impression/v_impression_etiquettes_form', $data);
